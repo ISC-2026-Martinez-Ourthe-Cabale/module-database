@@ -54,6 +54,10 @@ variable "db_name" {
   description = "Nombre de la base de datos inicial"
   default     = "ecommerce"
 }
+
+variable "db_address" {
+  type = string
+}
  
 variable "db_username" {
   type        = string
