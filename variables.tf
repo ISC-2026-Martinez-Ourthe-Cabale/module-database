@@ -55,10 +55,6 @@ variable "db_name" {
   default     = "ecommerce"
 }
 
-variable "db_address" {
-  type = string
-}
- 
 variable "db_username" {
   type        = string
   description = "Usuario administrador de la base"
