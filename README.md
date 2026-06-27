@@ -54,10 +54,14 @@ Este módulo aprovisiona una instancia de Amazon RDS con MySQL 8.0 desplegada en
 
 ## Outputs
 
-| Output        | Descripción                             |
-| ------------- | --------------------------------------- |
-| `db_endpoint` | Endpoint de conexión a la base de datos |
-| `db_port`     | Puerto de la base de datos              |
+| Output                 | Descripción                                                |
+| ---------------------- | ----------------------------------------------------------- |
+| `db_instance_id`       | ID de la instancia RDS (usado por el módulo de monitoreo) |
+| `db_endpoint`          | Endpoint de conexión (host:puerto) a la base de datos      |
+| `db_address`           | Dirección/host de la base de datos, sin el puerto          |
+| `db_port`              | Puerto de la base de datos                                  |
+| `db_name`              | Nombre de la base de datos inicial                          |
+| `db_subnet_group_name` | Nombre del DB Subnet Group creado                            |
 
 ## Ejemplo de Uso
 
